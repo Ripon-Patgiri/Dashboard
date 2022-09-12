@@ -83,7 +83,7 @@ select {
   --projectBgColor: #203f59;
   --xInfoBgColor: #011640;
   --searchBarColor: #8c7472;
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 }
 
 html {
@@ -91,56 +91,97 @@ html {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: var(--primaryColor);
-
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--primaryColor);
+  display: flex;
 }
 
 /* Sidebar */
 
-p{
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    gap: 3rem;
-    padding-bottom: 3rem;
-    border-radius: 5px;
-
+p {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-radius: 5px;
 }
 
 .sidebar {
-    width: 25vw;
-    height: 100vh;
-    border: 1px solid var(--primaryTextColor);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4rem;
-
+  width: 25vw;
+  height: 100vh;
+  border: 1px solid var(--primaryTextColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
 }
 
 .sidebar-heading {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4rem;
-    gap: 2rem;
-    font-size: 4.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 2rem;
+  font-size: 4.5rem;
 }
 
 .material-symbols-outlined {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 a {
-    text-decoration: none;
-    color: var(--projectBgColor);
+  text-decoration: none;
+  color: var(--projectBgColor);
 }
 
 a:active {
-    color: var(--primaryTextColor);
+  color: var(--primaryTextColor);
 }
 
 a:hover {
-    color: var(--primaryColor);
-    background-color: var(--xInfoBgColor);
+  color: var(--primaryColor);
+  background-color: var(--xInfoBgColor);
+}
+
+/* Main Content */
+
+.main-content {
+  width: 75vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid var(--primaryTextColor);
+  border-right: 1px solid var(--primaryTextColor);
+  border-bottom: 1px solid var(--primaryTextColor);
+}
+
+.profile {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--xInfoBgColor);
+}
+
+.name-text {
+  font-size: 1.8rem;
+}
+
+.search-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
 }
