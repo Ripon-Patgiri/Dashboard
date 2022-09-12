@@ -1,0 +1,146 @@
+/* --- CSS RESET START ---*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- CSS RESET END ---*/
+
+:root {
+  --primaryColor: #f2f2f2;
+  --primaryTextColor: #0d0d0d;
+  --projectBgColor: #203f59;
+  --xInfoBgColor: #011640;
+  --searchBarColor: #8c7472;
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--primaryColor);
+
+}
+
+/* Sidebar */
+
+p{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+
+}
+
+.sidebar {
+    width: 25vw;
+    height: 100vh;
+    border: 1px solid var(--primaryTextColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+
+}
+
+.sidebar-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
+    font-size: 4.5rem;
+}
+
+.material-symbols-outlined {
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--projectBgColor);
+}
+
+a:active {
+    color: var(--primaryTextColor);
+}
+
+a:hover {
+    color: var(--primaryColor);
+    background-color: var(--xInfoBgColor);
+}
