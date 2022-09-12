@@ -96,7 +96,7 @@ body {
   display: flex;
 }
 
-/* Sidebar */
+/* SIDEBAR */
 
 p {
   display: flex;
@@ -143,7 +143,9 @@ a:hover {
   background-color: var(--xInfoBgColor);
 }
 
-/* Main Content */
+/* MAIN CONTENT */
+
+/* Heading */
 
 .main-content {
   width: 75vw;
@@ -184,4 +186,52 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   gap: 3rem;
+}
+
+input {
+    width: 25vw;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid var(--primaryTextColor);
+    border-radius: 1rem;
+    background-color: var(--searchBarColor);
+    color: var(--primaryColor);
+}
+
+/* Projects */
+
+.projects {
+    width: 45vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.project {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--projectBgColor);
+    color: var(--primaryColor);
+    border-radius: 6px;
+}
+
+h3 {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.projects a {
+    color: var(--searchBarColor);
+}
+
+.projects a:hover {
+    color: var(--primaryTextColor);
+    background-color: var(--primaryColor);
+}
+
+.projects a:active {
+    color: var(--searchBarColor);
 }
