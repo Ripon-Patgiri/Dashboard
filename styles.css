@@ -88,12 +88,15 @@ select {
 
 html {
   font-size: 62.5%;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--primaryColor);
   display: flex;
+  border: 1px solid var(--primaryTextColor);
 }
 
 /* SIDEBAR */
@@ -110,7 +113,7 @@ p {
 .sidebar {
   width: 25vw;
   height: 100vh;
-  border: 1px solid var(--primaryTextColor);
+  border-right: 1px solid var(--primaryTextColor);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,8 +160,6 @@ a:hover {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-top: 1px solid var(--primaryTextColor);
-  border-right: 1px solid var(--primaryTextColor);
   border-bottom: 1px solid var(--primaryTextColor);
 }
 
@@ -234,4 +235,20 @@ h3 {
 
 .projects a:active {
     color: var(--searchBarColor);
+}
+
+.project-content-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.twitter-timeline {
+    padding-top: 4vh;
+    padding-right: 2vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
